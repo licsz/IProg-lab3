@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт о популярных видеоиграх War Thunder и Escape From Tarkov">
+    <meta name="keywords" content="видеоигры, War Thunder, Escape From Tarkov, гейминг">
+    <title>Мир видеоигр - Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Мир отвратительных видеоигр</h1>
+        <p>Избегайте эти отвратительные компьютерные игры</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="war_thunder.html">War Thunder</a></li>
+            <li><a href="escape_from_tarkov.html">Escape From Tarkov</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Популярные отвратительные игры</h2>
+        
+        <div class="game-card">
+            <img src="img/wt - main.jpg" alt="War Thunder">
+            <h3><a href="war_thunder.html">War Thunder</a></h3>
+            <p>Многопользовательская военная игра, посвященная авиации, бронетехнике и флоту Второй мировой войны и послевоенного периода.</p>
+            <p>Особенности игры:</p>
+            <ul>
+                <li>Реалистичная физика полета и боя</li>
+                <li>Более 2000 исторически точных машин</li>
+                <li>Несколько режимов игры (аркадный, реалистичный, симулятор)</li>
+            </ul>
+        </div>
+        
+        <div class="game-card">
+            <img src="img/eft - main.jpg" alt="Escape From Tarkov">
+            <h3><a href="escape_from_tarkov.html">Escape From Tarkov</a></h3>
+            <p>Хардкорная тактическая шутер от первого лица с элементами RPG и survival horror.</p>
+            <p>Особенности игры:</p>
+            <ul>
+                <li>Реалистичная система повреждений и лечения</li>
+                <li>Глубокие возможности кастомизации оружия</li>
+                <li>Экономика, основанная на выживании и торговле</li>
+            </ul>
+        </div>
+        
+        <div class="controls">
+            <h3>Интерактивные функции</h3>
+            <button onclick="showDate()">Показать текущую дату</button>
+        </div>
+        
+        <h3>Сравнение игр</h3>
+        <table>
+            <tr>
+                <th>Параметр</th>
+                <th>War Thunder</th>
+                <th>Escape From Tarkov</th>
+            </tr>
+            <tr>
+                <td>Жанр</td>
+                <td>Военный симулятор</td>
+                <td>Тактический шутер/Выживание</td>
+            </tr>
+            <tr>
+                <td>Платформы</td>
+                <td>PC, PS4, PS5, Xbox One, Xbox Series X/S</td>
+                <td>PC</td>
+            </tr>
+            <tr>
+                <td>Разработчик</td>
+                <td>Gaijin Entertainment</td>
+                <td>Battlestate Games</td>
+            </tr>
+            <tr>
+                <td>Год выхода</td>
+                <td>2012</td>
+                <td>2017 (бета-версия)</td>
+            </tr>
+        </table>
+        
+        <h3>Полезные ссылки</h3>
+        <ul>
+            <li><a href="https://warthunder.com" target="_blank">Официальный сайт War Thunder</a></li>
+            <li><a href="https://www.escapefromtarkov.com" target="_blank">Официальный сайт Escape From Tarkov</a></li>
+            <li><a href="https://store.steampowered.com" target="_blank">Steam - платформа для покупки игр</a></li>
+        </ul>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Мир отвратительных видеоигр. Какие еще права.</p>
+        <p><a href="#top">Вернуться наверх</a></p>
+    </footer>
+
+    <script>
+        function showDate() {
+            const now = new Date();
+            alert("Текущая дата и время: " + now.toLocaleString());
+        }
+        
+        function changeBackground() {
+            const colors = ["#f4f4f4", "#e8f4f8", "#f8e8e8", "#e8f8e8", "#f8f8e8"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
